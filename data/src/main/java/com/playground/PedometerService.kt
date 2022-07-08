@@ -4,6 +4,8 @@ import android.content.Context
 
 interface PedometerService {
     val initializedFrom: String
+
+    fun addSteps(steps: Int)
 }
 
 internal class PedometerServiceImpl(
@@ -13,4 +15,7 @@ internal class PedometerServiceImpl(
 
     override val initializedFrom: String
         get() = "Pedometer service has been initialized from the $initLocation"
+
+    override fun addSteps(steps: Int) {
+    }
 }
