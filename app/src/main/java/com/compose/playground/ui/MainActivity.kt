@@ -22,7 +22,6 @@ import com.compose.playground.ui.theme.defaultTextColor
 import com.playground.playground.R
 import org.koin.android.ext.android.inject
 
-// This is a unique comment
 class MainActivity : ComponentActivity() {
     private val viewModel: MainActivityViewModel by inject()
 
@@ -47,8 +46,6 @@ class MainActivity : ComponentActivity() {
         }
     }
 }
-
-// This is me adding a line to test
 
 @Composable
 fun Greeting(name: String, color: Color? = null) {
